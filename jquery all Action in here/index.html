@@ -1,0 +1,732 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="asset/css/normalize.css">
+  <link rel="stylesheet" href="asset/css/font-awesome.min.css">
+  <link rel="stylesheet" href="asset/css/bootstrap.css">
+  <link rel="stylesheet" href="asset/css/style.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!-- hide show toggle-->
+	<section class="hide-area">
+
+    <div class="text-center">
+      <button class="btn" id="hide">hide</button>
+      <button class="btn" id="show">show</button>
+      <button class="btn" id="toggle">toggle</button>
+    </div>
+
+    <div id="hst" class="style-div">
+      <h2>show</h2>
+      <h2>hide</h2>
+      <h2>toggle</h2>
+      <h6>1</h6>
+      <p class="main-js"><br>
+        $(document).ready(function(){ <br>
+        $("#hide").click(function(){<br>
+            $("#hst").hide("slow");<br>
+        });<br>
+        $("#show").click(function(){<br>
+            $("#hst").show("fast");<br>
+        });<br>
+        $("#toggle").click(function(){<br>
+            $("#hst").toggle(2000);<br>
+        });<br>
+    });<br>
+    <br>
+  </p>
+    </div>
+  </section>
+  <!--hide show toggle-->
+
+  <!-- fadeIn fadeOut fadeToggle fadeTo-->
+	<section class="fade-area">
+
+    <div class="text-center">
+      <button class="btn" id="fadein">fadeIn</button>
+      <button class="btn" id="fadeout">fadeOut</button>
+      <button class="btn" id="fadetoggle">fadeToggle</button>
+      <button class="btn" id="fadeto">fadeTo</button>
+    </div>
+
+    <div id="f-iott" class="style-div">
+      <h2>fadeIn </h2>
+      <h2>fadeOUt</h2>
+      <h2>fadeToggle</h2>
+      <h2>fadeTo</h2>
+      <h6>2</h6>
+      <p class="main-js"><br>
+        
+        $("#fadein").click(function(){<br>
+            $("#f-iott").fadeIn();<br>
+        });<br>
+        $("#fadeout").click(function(){<br>
+            $("#f-iott").fadeOut("slow");<br>
+        });<br><br>
+        $("#fadetoggle").click(function(){<br>
+            $("#f-iott").fadeToggle();<br>
+        });<br>
+        $("#fadeto").click(function(){<br>
+            $("#f-iott").fadeTo(2000, .3);<br>
+        });<br>
+       </p>
+  
+    </div>
+  </section>
+  <!--fadeIn fadeOut fadeToggle fadeTo-->
+
+  <!--slideUp slideDown slideToggle -->
+	<section class="slideup-area">
+
+    <div class="text-center">
+      <button class="btn" id="slideup">slideUp</button>
+      <button class="btn" id="slidedown">slideDown</button>
+      <button class="btn" id="slidetoggle">slideToggle</button>
+    </div>
+
+    <div id="s-udt" class="style-div">
+      <h2>slideup </h2>
+      <h2>slidedown</h2>
+      <h2>slidetoggle</h2>
+      <h6>3</h6>
+      <p class="main-js"><br>
+        
+      $("#slideup").click(function(){<br>
+          $("#s-udt").slideUp();<br>
+      });<br>
+      $("#slidedown").click(function(){<br>
+          $("#s-udt").slideDown("slow");<br>
+      });<br>
+      $("#slidetoggle").click(function(){<br>
+          $("#s-udt").slideToggle();<br>
+      });<br>
+
+       </p>
+  
+    </div>
+  </section>
+  <!--slideUp slideDown slideToggle-->
+
+  <!--amimate stop method -->
+	<section class="slideup-area">
+
+    <div class="text-center">
+      <button class="btn" id="animate">animate</button>
+      <button class="btn" id="stop">stop</button>
+    </div>
+
+    <div id="s-udt" class="style-div">
+      <h2>animate </h2>
+      <h2>stop</h2>
+      <h6>4</h6>
+      <div class="anime"></div>
+      <p class="main-js"><br>
+        $("#animate").click(function(){<br>
+          $(".anime").animate({<br>
+              left:"1000px",<br>
+              width:"400px",<br>
+              height:"300px"<br>
+          }, 4000, function(){<br>
+              alert("The Rakib")<br>
+          });<br>
+      });<br>
+      $('#stop').click(function(){<br>
+          $(".anime").stop();<br>
+      });<br>
+  
+       </p>
+  
+    </div>
+  </section>
+  <!--amimate stop method-->
+
+  <!--chineing method -->
+	<section class="chineing-area">
+
+    <div class="text-center">
+      <button class="btn" id="chine">chineing method</button>
+    </div>
+
+    <div id="c-method" class="style-div">
+      <h2>chineing method</h2>
+      <h2>connect another method</h2>
+      <h6>5</h6>
+      <p class="main-js"><br>
+        $("#chine").click(function(){<br>
+          $("#c-method").css({<br>
+              "background":"red",<br>
+              "color":"#fff"<br>
+          })<br>
+          .slideUp()
+          .slideDown(2000)
+      })<br>
+       </p>
+       
+    </div>
+  </section>
+  <!--chineing method-->
+
+  <!-- text html val = shoe -->
+	<section class="text-html-val-area">
+
+    <div class="text-center">
+      <button class="btn" id="text">text show</button>
+      <button class="btn" id="html">html show</button>
+      <button class="btn" id="value">value show</button>
+    </div>
+
+    <div id="thv-method" class="style-div">
+      <h2>text show element</h2>
+      <h2>html show element</h2>
+      <h2>value show element</h2>
+      <h6>6</h6> <br><br>
+      <h3>your nome <input id="in-val" type="text" value="youe name"></h3><br>
+      <p class="addpara">jquery with youtube videos <strong>moshiur rahman</strong></p><br>
+      <p class="main-js"><br>
+        $("#text").click(function(){<br>
+          alert("i am learning jquery with youtube videos").text();<br>
+      });<br>
+  
+      $("#html").click(function(){<br>
+          alert("i ....h2> am ..../h2> learning " +$(".addpara").html());<br>
+      });<br>
+  
+      $("#value").click(function(){<br>
+          alert("what " +$("#in-val").val());<br>
+      });<br>
+  
+       </p>
+       
+    </div>
+  </section>
+  <!-- text html val = shoe -->
+
+  <!--conteant and attribute change -->
+	<section class="text-html-val-area">
+
+    <div class="text-center">
+      <button class="btn" id="val-full">show name</button>
+      <button class="btn" id="dep-cha">show department</button>
+      <button class="btn" id="text-c">silks show</button>
+    </div>
+
+    <div id="thv-method" class="style-div">
+      <h2>text show element</h2>
+      <h2>html show element</h2>
+      <h2>value show element</h2>
+      <h6>7</h6> <br><br>
+      <h3>Nome : <input id="val-f" type="text" value="youe name"></h3><br>
+      <h3 class="dep">Department</h3>
+      <h3 class="silk">silks show</h3>
+      <p class="main-js"><br>
+        $("#val-full").click(function(){<br>
+          $("#val-f").val("raju mia")<br>
+      });<br>
+  
+      $("#dep-cha").click(function(){<br>
+          $(".dep").html("<b>commarce</b>")<br>
+      });<br>
+  
+      $("#text-c").click(function(){<br>
+          $(".silk").text("receved you taka check ");<br>
+      });<br>
+       </p>
+       
+    </div>
+  </section>
+  <!-- conteant and attribute change-->
+
+  <!-- attribute change -->
+	<section class="text-html-val-area">
+
+    <div class="text-center">
+      <button class="btn" id="attri-c">go facebook link </button>
+    </div>
+
+    <div id="thv-method" class="style-div">
+      <h2>attribute change</h2>
+      <h2>link chinge</h2>
+      <h6>8</h6> <br><br>
+      <h3>look here <a class="link-c" href="https://www.google.com" title="google">google</a></h3>
+      <h3>change link & text <a class="google-c" href="https://www.google.com" title="google">google</a></h3>
+      <p class="main-js"><br>
+        $("#attri-c").click(function(){<br>
+          $(".link-c").attr({<br>
+              "href":"https://wwww.facebook.com",<br>
+              "title":"facebook"<br>
+          })<br>
+          $(".google-c").attr({<br>
+              "href":"https://wwww.facebook.com",<br>
+              "title":"facebook"<br>
+          })<br>
+          .text("facebook")<br>
+      });<br>
+       </p>
+       
+    </div>
+  </section>
+  <!--attribute change-->
+
+  <!-- arepend append afrter before -->
+	<section class="text-html-val-area">
+
+    <div class="text-center">
+      <button class="btn" id="prepend">prepeand </button>
+      <button class="btn" id="append">append</button>
+      <button class="btn" id="before">before </button>
+      <button class="btn" id="after">after </button>
+    </div>
+
+    <div id="thv-method" class="style-div">
+      <h2>prepeand</h2>
+      <h2>append</h2>
+      <h2>before</h2>
+      <h2>after</h2>
+      <h6>9</h6> <br><br>
+      <h3 class="paab">rakib</h3>
+      <p class="main-js"><br>
+        $("#prepend").click(function(){<br>
+          $(".paab").prepend("my name is ")<br>
+      });<br>
+  
+      $("#append").click(function(){<br>
+          $(".paab").append(" Hossain")<br>
+      });<br>
+  
+      $("#before").click(function(){<br>
+          $(".paab").before(" red zoon")<br>
+      });<br>
+  
+      $("#after").click(function(){<br>
+          $(".paab").after(" green zoon")<br>
+          .css({<br>
+              "color":"green"<br>
+          });<br>
+      });<br>
+  
+       </p>
+       
+    </div>
+  </section>
+  <!--arepend append afrter before-->
+
+  <!-- empty remove -->
+	<section class="text-html-val-area">
+
+    <div class="text-center">
+      <button class="btn" id="empty">empty </button>
+      <button class="btn" id="remove">remove</button>
+    </div>
+
+    <div  class="style-div">
+      <h2>empty</h2>
+      <h2>remove</h2>
+      <h6>10</h6> <br><br>
+      <div id="er-method">
+        <h3>empty child elemant removed</h3>
+        <h3>remove this div removed</h3>
+      </div>
+      <p class="main-js"><br>
+        $("#empty").click(function(){<br>
+          $("#er-method").empty()<br>
+      });<br>
+  
+      $("#remove").click(function(){<br>
+          $("#er-method").remove()<br>
+      });<br>
+       </p>
+       
+    </div>
+  </section>
+  <!--empty remove-->
+
+
+  <!-- addClass removeClass toggleClass -->
+	<section class="text-html-val-area">
+
+    <div class="text-center">
+      <button class="btn" id="addclass">addclass </button>
+      <button class="btn" id="removeclass">removeclass</button>
+      <button class="btn" id="toggleclass">toggleclass</button>
+    </div>
+
+    <div  class="style-div">
+      <h2>addclass</h2>
+      <h2>removeclass</h2>
+      <h2>toggleclass</h2>
+      <h6>11</h6> <br><br>
+      <div class="art-method" id="art-method">
+        <h2>addclass</h2>
+        <h2>removeclass</h2>
+        <h2>toggleclass</h2>
+      </div>
+      <p class="main-js"><br>
+        $("#addclass").click(function(){<br>
+          $(".art-method").addClass("styles")<br>
+      });<br>
+  
+      $("#removeclass").click(function(){<br>
+          $(".art-method").removeClass("styles")<br>
+      });<br>
+  
+      $("#toggleclass").click(function(){<br>
+          $("#art-method").toggleClass("styles")<br>
+      });<br>
+       </p>
+    </div>
+  </section>
+  <!--addClass removeClass toggleClass-->
+
+  <!-- dimention width height innerWidth innerHeight outerWidth outerHeight outerWidth(true) outerHeight(true) start -->
+	<section class="h-auto">
+
+    <div class="text-center">
+      <button class="btn" id="display">display </button>
+      <button class="btn"><a href="https://www.w3schools.com/jquery/jquery_dimensions.asp" target="_blank">Dimention</a></button>
+    </div>
+
+    <div  class="style-div">
+      <h2>dimention width height <span>elemant height width </span></h2>
+      <h2>innerWidth innerHeight <span>padding + elemant height width </span> </h2>
+      <h2>outerWidth outerHeight <span>border + padding + element height width</span></h2>
+      <h2>outerWidth(true) outerHeight(true) <span>margin + border + padding + elemant height width</span></h2>
+      <h6>12</h6> <br>
+      <div id="showed"></div><br>
+      <div>
+        <p class="parfect">
+          margin: 50px;
+          padding: 60px;
+          border: 70px solid red;
+          width: 1000px;
+        </p>
+      </div>
+      <p class="main-js"><br>
+        var val = "";<br>
+        val +="The width is : "+$(".parfect ").width()+"..../br>";<br>
+        val +="The height is : "+$(".parfect ").height()+"..../br>";<br>
+        val +="The innerwidth is : "+$(".parfect ").innerWidth()+"..../br>";<br>
+        val +="The innerheight is : "+$(".parfect ").innerHeight()+"..../br>";<br>
+        val +="The outerwidth is : "+$(".parfect ").outerWidth()+"..../br>";<br>
+        val +="The outerheight is : "+$(".parfect ").outerHeight()+"..../br>";<br>
+        val +="The outerwidth is : "+$(".parfect ").outerWidth(true)+"..../br>";<br>
+        val +="The outerheight is : "+$(".parfect ").outerHeight(true)+"..../br>";<br>
+        $("#showed").html(val);<br>
+       </p>
+    </div>
+  </section>
+  <!--dimention width height innerWidth innerHeight outerWidth outerHeight outerWidth(true) outerHeight(true) snd-->
+
+  <!-- dim--if else condition in loging box-->
+	<section class="condition h-auto">
+
+
+    <div  class="style-div">
+      <h2>loging box</h2>
+      <h2>condition loging box</h2>
+      <h6>13</h6> <br>
+      <div class="from">
+        <form id="myaction">
+          <table>
+            <tr>
+              <td>fast name</td>
+              <td><input id="requered" type="text"></td>
+            </tr>
+            <tr>
+              <td>last name</td>
+              <td><input id="requered" type="text"></td>
+            </tr>
+            <tr>
+              <td>email address</td>
+              <td><input id="requered" type="text"></td>
+            </tr>
+            <tr>
+              <td>web address</td>
+              <td><input id="requered" type="text"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><button id="submit"  >submit</button></td>
+            </tr>
+          </table>
+          <div id="reply"></div>
+        </form>
+      </div>
+      <p class="main-js"><br><br>
+      $("#submit").click(function(e){<br>
+        var inValid = true;<br>
+        $("input[type='text']#requered").each(function(){<br>
+            if($(this).val()==''){<br>
+                inValid = false;<br>
+                $(this).css({<br>
+                    "border":"1px solid red",<br>
+                    "background":'#fffccc'<br>
+                });<br>
+            }else{<br>
+                $(this).css({<br>
+                    "border":"",<br>
+                    "background":''<br>
+                });<br>
+            }<br>
+        });<br>
+        if(inValid == false){<br>
+            e.preventDefault();<br>
+        }else{<br>
+            clear();<br>
+            document.getElementById("reply") .innerHTML = "THANK FOR SUBMITING DEAR";<br>
+            return false;<br>
+        }<br>
+      });<br>
+
+      //costomar function<br>
+
+      function clear(){<br>
+        $('#myaction :input').each(function(){<br>
+            $(this).val('');<br>
+        });<br>
+      }<br>
+       </p>
+    </div>
+  </section>
+  <!----if else condition in loging box-->
+
+  <!-- animation set by set -->
+	<section class="animation-area h-auto">
+
+    <div class="text-center">
+      <button class="btn" id="animation">animation </button>
+    </div>
+
+    <div  class="style-div">
+      <h2>moshiur videos tutorials</h2>
+      <h2>animation</h2>
+      <h2>set by set</h2>
+      <h6>14</h6> <br><br>
+	    <p>variable use kore animation one after another</p> <br><br>
+      <div class="gone">
+      </div>
+      <p class="main-js"><br>
+        $('#animation').click(function(){<br>
+          var leftmat = $('.gone')<br>
+        
+          leftmat.animate({left: "300px"});<br>
+          leftmat.animate({height:"400px"}, 'slow');<br>
+          leftmat.animate({width:"400px"}, 2000);<br>
+        
+          });<br>
+       </p>
+    </div>
+  </section>
+  <!--animation set by set-->
+
+  <!-- ancestors  -->
+	<section class="animation-area h-auto">
+    <div class="text-center">
+      <button class="btn"><a href="https://www.w3schools.com/jquery/jquery_traversing.asp" target="_blank">jQuery Traversing</a></button>
+      <button class="btn"><a href="https://www.w3schools.com/jquery/jquery_traversing_ancestors.asp" target="_blank"> Descendants</a></button>
+    </div>
+    <div  class="style-div">
+      <h2>Ancestors</h2>
+      <h2>style: main.js</h2>
+      <h3>parent / parents (up all) / parentsUntil (select down)use</h3>
+      <h6>15</h6><br><br>
+      <div class="ancestors">
+        <div>div
+          <ul>ul
+            <li>li
+              <span class="spa">span</span>
+            </li>
+          </ul>
+        </div>
+      </div><br>
+      <p class="main-js"><br>
+        $(".spa").parent().css({<br>
+          "border" : "5px solid red"<br>
+        });<br>
+      
+        $(".spa").parents("div").css({<br>
+          "border" : "5px solid yellow"<br>
+        });<br>
+        $(".spa").parentsUntil("div").css({<br>
+          "font-size": "25px",<br>
+          "color":"green"<br>
+        });<br>
+       </p>
+    </div>
+  </section>
+  <!--ancestors -->
+
+  <!-- Decending  -->
+	<section class="animation-area h-auto">
+    <div class="text-center">
+      <button class="btn"><a href="https://www.w3schools.com/jquery/jquery_traversing_filtering.asp" target="_blank"> Filtering </a></button>
+    </div>
+    <div  class="style-div">
+      <h2>Decending</h2>
+      <h2>style: main.js</h2>
+      <p>children / find (selector) </p>
+      <h6>16</h6><br><br>
+      <div class="decending">
+        decending
+        <div> div
+          <ul>ul
+            <li>li
+              <span>span</span>
+            </li>
+          </ul>
+        </div>
+      </div><br><br><br>
+      <p class="main-js"><br>
+        $(".decending").children().css({<br>
+          "border" : "5px solid grey"<br>
+        });<br>
+        $(".decending").find("li").css({<br>
+          "border" : "5px solid black"<br>
+        });<br>
+       </p>
+    </div>
+  </section>
+  <!--Decending -->
+
+  <!-- Decending  -->
+	<section class="-area h-auto">
+    <div class="text-center">
+      <button class="btn"><a href="https://www.w3schools.com/jquery/jquery_traversing_filtering.asp" target="_blank"> Filtering </a></button>
+    </div>
+    <div  class="style-div">
+      <h2>The first(), last(), eq(), filter() and not() Methods</h2>
+      <h2>style: main.js</h2>
+      <h6>17</h6><br><br>
+      <div class="selection">
+        <div class="sub-sel">
+          <p>leorm if some is the best text paragraps</p>
+          <p>leorm if some is the best text paragraps</p>
+          <a class="thise">I AM THIS </a>
+          <a> THIS </a>
+          <a> THIS </a>
+          <span> to going</span>
+        </div>
+        <div>
+          <p>leorm if some is the best text paragraps</p>
+          <p>leorm if some is the best text paragraps</p>
+          <a>leorm if some is </a>
+          <span> to going</span>
+        </div>
+        <div>
+          <p>leorm if some is the best text paragraps</p>
+          <p>leorm if some is the best text paragraps</p>
+          <a class="thispara">leorm if some is </a>
+          <span> to going</span>
+        </div>
+      </div> <br><br><br>
+      <p class="main-js"><br>
+        $(".selection div").first().css({<br>
+          "background" : "grey",<br>
+          "margin-bottom" : "20px"<br>
+        });<br>
+      
+        $(".selection div").last().css({<br>
+          "background" : "red",<br>
+          "margin-top": "20px",<br>
+          "color": "green"<br>
+      
+        });<br>
+      
+        $(".selection div").eq("1").css({<br>
+          "background" : "lightblue",<br>
+          "color": "green"<br>
+      
+        });<br>
+      
+        $(".selection div a").filter(".thispara").css({<br>
+          "background" : "lightblue",<br>
+          "color": "green"<br>
+      
+        });<br>
+      
+        $(".sub-sel a").not(".thise").css({<br>
+          "font-size" : "30px",<br>
+          "color": "red"<br>
+      
+        });
+      
+       </p>
+    </div>
+  </section>
+  <!--Decending -->
+
+  <!-- Decending  -->
+	<section class="animation-area h-auto">
+    <div class="text-center">
+      <button class="btn"><a href="https://www.w3schools.com/jquery/jquery_traversing_siblings.asp" target="_blank">Siblings</a></button>
+    </div>
+    <div  class="style-div">
+      <h2>siblings</h2>
+      <h2>style: main.js</h2>
+      <p>siblings / next / nextAll / prev / prevAll /nextUntil (select stop) / prevUntil(select stop) </p>
+      <h6>18</h6>
+      <div class="siblings">
+        i am sublings
+        <div> div
+          <button>click me</button>
+          <h1>i am h1 </h1>
+          <h2>i am h2</h2>
+          <h2>i am h2</h2>
+          <h2>am i h2</h2>
+          <p> i am P  leorm if some is the best text paragraps</p>
+          <p>i am P leorm if some is the best text paragraps</p>
+          <a> i am a leorm if some is </a>
+          <span>i am span to going</span>
+        </div>
+      </div> <br>
+      <p class="main-js"><br>
+        $(".siblings h1").siblings().css({<br>
+          "border" : "5px solid grey"<br>
+        });<br>
+      
+        $(".siblings h2").siblings("span").css({<br>
+          "border" : "5px solid green"<br>
+        });<br>
+      
+        $(".siblings h2").next().css({<br>
+          "color" : "red"<br>
+          "font-size":"20px"<br>
+        });<br>
+        $(".siblings h2").prev().css({<br>
+          "color" : "green"<br>
+        });<br>
+      
+        $(".siblings a").prevUntil("h1").css({<br>
+          "background" : "yellow",<br>
+        });<br>
+       </p>
+    </div>
+  </section>
+  <!--Decending -->
+
+  <script src="asset/js/jquery.min.js"></script>
+  <script src="asset/js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="asset/js/bootstrap.min.js"></script>
+  <script src="asset/js/plugins.js"></script>
+  <script src="asset/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- document object model DOM -->
+
+    <div id="main" style="background-color: #808080;">
+        <h4>heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam error itaque fuga cum modi laboriosam reprehenderit eaque iusto sint.</p>
+
+    </div>
+
+
+
+    <!-- dom -->
+
+    <ul id="list">
+        <li class="apple"> apple</li>
+        <li>orange</li>
+        <li>banana</li>
+        <li>lichy</li>
+        <li id="totto" class="totto">tomato</li>
+    </ul>
+
+    
+    <ul id="list-second">
+        <li>red</li>
+        <li>green</li>
+        <li> balck</li>
+        <li>white</li>
+        <li class="apple"> apple</li>
+        <li>lite</li>
+    </ul>
+
+
+    <Script>
+
+        
+        /* createElement createTextNote createComment */
+/* 
+       var newElement = document.createElement('h3');
+        console.log(newElement);
+
+        var newText = document.createTextNode('this is create text')
+        console.log(newText);
+         */
+        //var newComment = document.createComment('this is create comment')
+        // console.log(newComment);
+      
+
+        /* appendChild(last add) & insideBefore(childNote use) */
+
+
+
+    //  newElement.appendChild(newText);
+
+    //document.getElementById('main').appendChild(newElement); 
+
+    // var target = document.getElementById('main');
+    // target.insertBefore(newElement,target.childNodes[0]);
+ 
+
+
+        /* insertAdjacentHTML insertAdjacentElement insertAdjacentText  */
+        /* position is //beforebegin// afterbegin// beforeend// afterend */
+
+
+        // insertAdjacentElement
+
+/*         
+        var iss = document.createElement("h3");
+
+        var zss = document.createTextNode("element me");
+
+        iss.appendChild(zss);
+
+        var target = document.getElementById('main');
+        target.insertAdjacentElement('afterend',iss);
+ */
+
+/* 
+        var newText = 'rakib command you';
+        var newhtml = '<h2>heading me</h2>';
+
+
+        var target = document.getElementById('main');
+ */
+        // insertAdjacentHTML
+/* 
+        target.insertAdjacentHTML('beforebegin', newhtml);
+ */
+        // insertAdjacentText
+    /*     
+         target.insertAdjacentText('afterend', newText);
+  */
+
+        
+
+        // replece-child & remove child
+/* 
+        var item = document.createElement('li');
+        var itemText = document.createTextNode('wow new text');
+
+        item.appendChild(itemText);
+        
+        var target = document.getElementById('list');
+
+        var oldList = target.children[2];
+        var oldListRemove = target.children[3];
+
+        oldList.style.color ='red';
+        console.log(oldList)
+
+         target.replaceChild(item, oldList);
+         */
+
+         // removeChil
+
+        /*   target.removeChild(oldListRemove)  */
+      
+
+
+
+
+
+
+
+
+        //cloneNodes ( /* copy and prest /// repeate 2 vaule true or false*/)
+/* 
+        var selected = document.getElementById('list').children[4];
+        var paste = document.getElementById('list-second');
+        var copy =selected.cloneNode(true);
+
+        console.log(copy)
+        var target = document.getElementById('list-second');
+
+        paste.appendChild(copy);
+ */
+
+
+        //contains method () /* return value true or false */
+        // search his inner div class.id
+/* 
+        var parentElement = document.getElementById('list');
+        var target = document.querySelector('.totto');
+
+        var find = parentElement.contains(target);
+
+        console.log(find)
+ */
+
+
+
+
+        //hasAttribute hasChildNodes
+
+        //hasAttribute return true or false & her with attribute
+
+/*         var target = document.getElementById('totto');
+
+        var find = target.hasAttribute('class');
+
+        console.log(find)
+ */
+
+        //hasChildNodes return true or false & check her any child retund true
+/* 
+        var findChild =  target.hasChildNodes();
+
+        console.log(findChild)
+ */
+
+
+
+
+
+        
+        //isEqualNode return true or false /* compear two element *** equal all value child, tag, attribure/value */
+/*         
+        var target1 = document.getElementById('list').firstElementChild;
+        var target2 = document.getElementById('list-second').children[4];
+
+
+        var equal = target1.isEqualNode(target2);
+
+        console.log(equal)
+ */
+
+
+
+
+    </Script>
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        //template string
+
+        // add use /* back tick   (keyboard top left one dowm) */
+
+/*         var user ='rakib mia'
+        var greet = `helloo ${user}`
+ */
+        // console.log(greet);
+
+
+  /*       var fName = 'rakib';
+        var lName = 'hossain';
+
+        var fullName  = `${fName} ${lName}`;
+
+        function fullname(fName, lName){
+            return `${fName} ${lName}`
+        };
+
+        var hello =`hello ${fullname(fName, lName)}`; */
+        // document.write(`${fName} ${lName}`)
+        // document.write(fullName)
+        // document.write(hello);
+
+
+        //arrow function
+/* 
+        function helloo(){
+            document.write('hello me');
+
+        }
+        helloo();
+        document.write('<br>');
+
+        var hell = function(){
+            document.write('hello me');
+
+        }
+        hell(); */
+
+        // sample use function
+
+/*         var hee = () => {console.log('ami sample')};
+        hee(); */
+
+/*         var heee = ()=> console.log('ami sample');
+
+        heee();
+        
+
+
+        var desh = function(count){
+            return count
+        }
+        console.log(desh('dsklsdkf'))
+
+        var desh = (coury) => `${coury} bangladesh ${lName}`;
+
+        console.log(desh('country'))
+ */
+
+        //funtions with Multiple arguments
+
+/*         function sum(n, m){
+            var t = 0;
+            t += n + m;
+
+            console.log(t)
+        }
+
+        sum(23, 2)
+ */
+        // use arguments
+/* 
+        function sum(){
+            var t = 0;
+            for (const i in arguments) {
+                t+= arguments[i]
+            }
+            console.log(t)
+        }
+
+        sum(23, 2, 40)
+ */
+
+
+    // rest & arguments
+
+/*         function sum(name,...result){
+
+                    var t = 0;
+                    for (const i in result) {
+                        t+= result[i]
+                    }
+                    console.log(t);
+                     console.log(`hello ${name} your count is ${t}`)
+
+        }
+
+        sum("nadim", 2, 40,39);
+ */
+        //spread operator
+        
+/* 
+        function sum(name,...result){
+
+        var t = 0;
+        for (const i in result) {
+            t+= result[i]
+        }
+        console.log(t);
+        console.log(`hello ${name} your count is ${t}`)
+
+        }
+        let arrg = [2, 40,39]
+        sum("nadim", ...arrg);
+ */
+        // concat 
+/*         let name = 'rakib';
+        let age = [34];
+        let arrrr = [49, 5]
+ */
+        // var total = arrg.concat(age);
+
+/*         let total =[...age, ...arrrr, 50]
+        function sum(name,...result){
+
+            var t = 0;
+            for (const i in total) {
+                t+= total[i]
+            }
+            console.log(t);
+            console.log(`hello ${name} your count is ${t}`)
+
+            }
+            sum(name, total)
+            console.log(total)
+ */
+
+            // object use
+/* 
+        var obje1 = {
+            name:'rakib',
+            batch: '4th'
+        }
+        var obje2 ={
+            age : 22,
+        }
+
+        var obje3 ={...obje1, ...obje2,ami:'sdkf'};
+        console.log(obje3);
+         */
+
+
+         //object literals
+        
+/*          var name = 'rakib';
+        var course = '4th batch';
+
+        var objec ={
+            name,
+            course
+        }  */ 
+
+    /*     var n = 'name';
+        var course = '4th batch';
+ */
+        // var objec ={
+        //     [n + 'student'] : 'rakib',
+        //     course,
+
+        //     detail: function(){
+        //        return `name ${this.namestudent} her ${course}`
+        //     }
+        // }
+
+
+        // var objec ={
+        //     [n + 'student'] : 'rakib',
+        //     course,
+
+        //     detail(){
+        //        return `name ${this.namestudent} her ${course}`
+        //     }
+        // }
+
+
+/*         var objec ={
+            [n + 'student'] : 'rakib',
+            course,
+
+            ['detail show'](){
+               return `name ${this.namestudent} her ${course}`
+            }
+        }
+
+        console.log(objec['detail show']());
+ */
+
+/* 
+        var fname = 'rakib';
+        var lname = 'hossain';
+        var course = '4th';
+
+        function student(fname, lname, course){
+            var fullName = fname + '' + lname;
+
+            return {fullName, course}
+        }
+        var s = student(fname, lname, course);
+        console.log(s.fullName);
+         */
+        // console.log(student(fname, lname, course));
+
+
+        //destructuring array
+
+/*         let user = ['rakib hossain', 21, 'bangladesh',['male', 23000]];
+        // age default valw 20
+        let [name, age = 20, city,[gander, salary]] = user;
+
+        console.log(name);
+        console.log(age);
+        console.log(city);
+        console.log(ganderd); */
+
+/* 
+        let user = ['rakib hossain', 21, 'bangladesh'];
+
+        let [name, ...args] = user;
+
+        console.log(name);
+        console.log(args);
+ */
+/* 
+            function user([name, age =20 , city]){
+                console.log(name);
+                console.log(age);
+                console.log(city);
+            }
+            user(['rakib hossain', 22, 'bangladesh']);
+ */
+            
+/*             function user(){
+                return ['rakib hossain', 22, 'bangladesh'];
+            }
+            var [name, age, city] =user();
+
+            console.log(city);
+ */
+
+
+            ///distractuing object
+
+/*             let user = {
+                name: 'rakib',
+                age: 22,
+                city: 'bangladesh'
+            }
+
+            // let {name, age, city} = user;
+            let {name: n, age:a, city:c} = user;
+
+            // console.log(name);
+            // console.log(a);
+
+ */
+
+
+        /// opp object oriented programming
+        // methods constructor prototype static
+
+        // constructor /*  auto call */
+/* 
+        class studet{
+            constructor(){
+                console.log('constructor function')
+            }
+        }
+
+        let  s = new studet();
+        let  w = new studet();
+
+
+        // prototype 
+        class hello{
+            message(){
+                console.log('hello every one');
+            }
+        }
+
+        let a = new hello();
+
+        a.message(); 
+ */
+
+/*         class student{
+            constructor(name, age){
+                this.studentName = name;
+                this.studentAge = age;
+                console.log(name);
+            }
+            user(){
+                console.log(`hello ${this.studentName} your age was ${this.studentAge}`)
+            }
+
+            static info(){
+                console.log('static function call');
+            }
+        }
+
+       let s =new student('rakib', 54);
+
+       let a = new student();
+        // not create object
+
+       student.info();
+
+       s.user()
+ */
+
+
+        // inheritance
+
+
+        class employee{
+            constructor(name, age){
+                this.fname = name;
+                this.ages = age;
+                console.log(`employee name is ${this.fname} his age ${this.ages}`);
+            }
+        }
+
+        class manager extends employee{
+            constructor(color){
+                super();
+                console.log(`employee fav color ${color}`);
+
+            }
+        }
+        let e = new manager('red');
+
+        let em = new employee('rakib', 23);
+
+    </script>
+</body>
+</html>

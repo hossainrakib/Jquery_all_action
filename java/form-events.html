@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+ <form action="#" id="submited">
+    
+    <label for="">Name</label>
+    <input type="text" id="name" value="rakib" onclick="focusfunction(this)" onblur="blurfunction(this)"> <br>
+    <br><br>
+    <label for="">Last Name</label>
+    <input type="text" id="lastName"  onclick="focusfunction(this)" onblur="blurfunction(this)" required> <br>
+
+    <label for="">country</label>
+    <select name="" id="country">
+        <option value="bangladesh">bangladesh</option>
+        <option value="nepal">nepal</option>
+        <option value="gaja">gaja</option>
+        <option value="india">india</option>
+    </select>
+    <div></div>
+
+    <textarea name="" id="text" cols="30" rows="10"></textarea>
+    <div class=""></div>
+    <br><br>
+    <input type="submit" value="submit here">
+ </form>
+
+
+
+
+
+<script>
+
+
+    function focusfunction(elements){
+        elements.style.backgroundColor='green';
+
+    }
+    
+    function blurfunction(elements){
+        elements.style.backgroundColor='';
+
+    };
+
+
+/*     
+    function inputfunction(elements){
+        var x = elements.value;
+
+        document.getElementById('text').innerText = x;
+    }
+ */
+
+    var inputSelect =document.getElementById('name');
+    var inputLast =document.getElementById('lastName');
+    var textSelect =document.getElementById('text');
+    // console.log(inputLast)
+
+    inputSelect.addEventListener('input', function(rakib){
+        var x = inputSelect.value;
+        textSelect.innerText =x;
+    })
+
+
+    //change method use
+    var country =document.getElementById('country');
+
+    country.addEventListener('change', function(i){
+        var t = country.value
+
+        textSelect.innerHTML = t; 
+    });
+
+
+    //select method use
+
+    inputSelect.addEventListener('select', function(lei){
+
+        var x = inputSelect.value
+        alert('hello' +' '+ x);
+
+    })
+
+    //submit method use
+
+    var submit = document.getElementById('submited');
+
+    submit.addEventListener('submit', function(){
+        alert('successful submit'+ ' ' + inputSelect.value)
+    })
+
+    //invalid use (type check, fill check)
+
+    inputLast.addEventListener('invalid', function(){
+        alert(inputSelect.value + ' ' + 'Please written your last name')
+    })
+
+</script>
+
+
+</body>
+</html>
